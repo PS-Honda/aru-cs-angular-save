@@ -1,1 +1,21 @@
-<p>title2 works!</p>
+<div class="container">
+  <h1 class="text-center"> Name : {{name}}</h1>
+  <h1 class="text-center"> Surname : {{ surname}}</h1>
+  <h2 class="text-center">Student Id : {{studentId}}</h2>
+</div>
+
+<div class="mb-3 col-sm-4">
+  <label  class="form-label">Name</label>
+  <input type="text" class="form-control"
+  [(ngModel)]="name">
+</div>
+<div class="mb-3 col-sm-4">
+  <label  class="form-label">Surname</label>
+  <input type="text" class="form-control"
+  [(ngModel)]="surname">
+</div>
+<div class="mb-3 col-sm-4">
+  <label  class="form-label">Student Id</label>
+  <input type="text" class="form-control"
+  [(ngModel)]="studentId">
+</div>
