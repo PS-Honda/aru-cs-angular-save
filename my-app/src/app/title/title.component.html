@@ -1,0 +1,13 @@
+<h1>{{ wording1 }}</h1>
+<input type="number" [(ngModel)]="num1">
+<input type="number" [(ngModel)]="num2">
+<select [(ngModel)]="sb">
+  <option *ngFor="let item of symbol;"
+    value="{{item}}"
+    [ngValue]="item"
+    >
+    {{item}}
+  </option>
+</select>
+<button type="button" (click)="cal($event)" > Cal </button>
+<li *ngFor="let item of symbol;">{{item}}</li>
